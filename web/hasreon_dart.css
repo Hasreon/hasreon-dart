@@ -58,6 +58,7 @@ h1 {
 #sendButton {
   width: 10%;
   border-radius: 5px;
+  position: fixed;
 }
 
 /*
