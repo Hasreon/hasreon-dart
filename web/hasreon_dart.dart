@@ -1,17 +1,25 @@
 import 'dart:html';
-/*
+
+TextAreaElement inputData = querySelector("#inputData");
+DivElement outputData = querySelector("#output");
+
 void main() {
-  querySelector("#sample_text_id")
-      ..text = "Click me!"
-      ..onClick.listen(reverseText);
+  ButtonElement postButton = querySelector('#sendButton');
+  postButton.onClick.listen(getText);
+  inputData.onKeyUp.listen(getTextEnter);
 }
 
-void reverseText(MouseEvent event) {
-  var text = querySelector("#sample_text_id").text;
-  var buffer = new StringBuffer();
-  for (int i = text.length - 1; i >= 0; i--) {
-    buffer.write(text[i]);
+void getTextEnter(KeyboardEvent e) {
+  if (e.keyCode == KeyCode.ENTER) {
+    getText(e);
   }
-  querySelector("#sample_text_id").text = buffer.toString();
 }
-*/
+
+void getText(Event e) {
+  postText(inputData.value);
+  inputData.value = '';
+}
+
+void postText(String s) {
+  outputData.appendHtml('<br>' +  s);
+}
