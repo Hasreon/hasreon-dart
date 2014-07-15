@@ -1,8 +1,8 @@
 before_script:
   - mkdir tmp
   - wget -O tmp/dartsdk.zip http://storage.googleapis.com/dart-archive/channels/stable/release/latest/sdk/dartsdk-linux-x64-release.zip
-  - unzip tmp/dartsdk.zip temp
-  - export DART_SDK=tmp/dart-sdk
+  - unzip tmp/dartsdk.zip
+  - export DART_SDK=dart-sdk
   - export PATH=$DART_SDK/bin:$PATH
 script:
  - dartanalyzer web/hasreon_dart.dart
