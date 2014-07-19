@@ -22,6 +22,7 @@ As with any dungeon game, there will be various rooms for the user to progress t
 * Steel, weak to fire, resists Wind
 * Lightning, weak to Earth, resists Water
 * Wind, weak to Steel, resists Fire
+
 #### Armour
 Both players, NPCs and monsters all have scope to wear armour. It should be made up of a specific type, and thus should be good at protecting against some types and worse at protecting against others. It should also enhance damage of its own type. Armour should have 3 values, protection (for damage reduction calculations), enhancement (for damage enhancement algorithms of the user), and wear (for when the Armour wears out and breaks). It should also be broken into a helmet, a chestplate, leggings and boots, and they all should have different levels of effect on the user, depending on their size.
 #### Weapons
